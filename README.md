@@ -1,74 +1,74 @@
-# Belajar Mengaji & Ibadah App
+# Belajar Mengaji & Ibadah App (Learn Quran & Worship)
 
-Aplikasi web komprehensif untuk belajar membaca Al-Quran, panduan ibadah sholat, dan ilmu agama Islam. Dibangun dengan teknologi web modern untuk memberikan pengalaman belajar yang interaktif dan mudah diakses.
+A comprehensive web application for learning to read the Quran, prayer guides, and Islamic knowledge. Built with modern web technologies to provide an interactive and accessible learning experience.
 
-![Belajar Mengaji App](dashboard.png)
+![Belajar Mengaji App](public/vite.svg) *Replace with actual app screenshot if available*
 
-## Fitur Utama
+## Key Features
 
-### 📖 Al-Quran & Belajar Mengaji
-*   **Hijaiyah**: Pengenalan huruf-huruf dasar hijaiyah dengan audio.
-*   **Iqro Digital**: Materi lengkap Iqro Jilid 1 sampai Jilid 6 dengan latihan membaca bertahap.
-*   **Tahsin**: Panduan memperbaiki bacaan Al-Quran, termasuk Makharijul Huruf (Tempat keluar huruf) dan Sifatul Huruf.
-*   **Tajwid**: Penjelasan lengkap hukum-hukum bacaan (Mad, Nun Mati, Mim Mati, Qalqalah, dll).
-*   **Juz Amma**: Hafalan surat-surat pendek Juz 30.
+### 📖 Quran & Learning
+*   **Hijaiyah**: Introduction to basic Hijaiyah letters with audio pronunciation.
+*   **Digital Iqro**: Complete Iqro materials from Volume 1 to Volume 6 with progressive reading exercises.
+*   **Tahsin**: Guide to improving Quranic reading, including Makharijul Huruf (places of articulation) and Sifatul Huruf (characteristics of letters).
+*   **Tajwid**: Detailed explanations of reading rules (Mad, Dead Nun/Tanwin, Dead Mim, Qalqalah, etc.).
+*   **Juz Amma**: Memorization of short Surahs from Juz 30.
 
-### 🕌 Panduan Ibadah
-*   **Jadwal Sholat & Imsyak**: Waktu sholat akurat otomatis berdasarkan lokasi pengguna (menggunakan API Aladhan).
-*   **Panduan Wudhu**: Tata cara berwudhu yang benar.
-*   **Panduan Sholat Fardhu**: Bacaan, gerakan, dan niat sholat wajib.
-*   **Sholat Sunnah**: Panduan berbagai sholat sunnah.
+### 🕌 Worship Guides
+*   **Prayer Times & Imsyak**: Accurate prayer times automatically based on user location (powered by Aladhan API).
+*   **Wudhu Guide**: Step-by-step guide to perform ablution (Wudhu) correctly.
+*   **Fard Prayer Guide**: Readings, movements, and intentions (Niat) for obligatory prayers.
+*   **Sunnah Prayer**: Guides for various Sunnah prayers.
 
-### 📚 Kitab & Ilmu
-*   **Nahwu & Shorof**: Pengenalan dasar tata bahasa Arab (Kitab Kuning).
+### 📚 Books & Knowledge
+*   **Nahwu & Shorof**: Introduction to basic Arabic grammar (Kitab Kuning).
 
-### 🏆 Fitur Gamifikasi
-*   **Kuis Islami**: Uji pengetahuan dengan kuis interaktif.
-*   **Leaderboard**: Papan peringkat untuk memotivasi belajar.
-*   **Badge**: Lencana penghargaan atas pencapaian belajar.
+### 🏆 Gamification Features
+*   **Islamic Quiz**: Test your knowledge with interactive quizzes.
+*   **Leaderboard**: Rankings to motivate learning progress.
+*   **Badges**: Awards for learning achievements.
 
-## Teknologi
+## Technology Stack
 
-Aplikasi ini dibangun menggunakan:
-*   **[React](https://reactjs.org/)**: Library UI utama.
-*   **[Vite](https://vitejs.dev/)**: Build tool yang super cepat.
-*   **[Tailwind CSS](https://tailwindcss.com/)**: Framework CSS untuk styling modern dan responsif.
-*   **[Lucide React](https://lucide.dev/)**: Koleksi ikon yang indah dan ringan.
-*   **[Axios](https://axios-http.com/)**: Untuk fetching data API (Jadwal Sholat).
-*   **[Firebase](https://firebase.google.com/)**: Backend service (untuk fitur Leaderboard/Database).
+This application is built using:
+*   **[React](https://reactjs.org/)**: Main UI library.
+*   **[Vite](https://vitejs.dev/)**: Super fast build tool.
+*   **[Tailwind CSS](https://tailwindcss.com/)**: Utility-first CSS framework for modern and responsive styling.
+*   **[Lucide React](https://lucide.dev/)**: Beautiful and lightweight icon set.
+*   **[Axios](https://axios-http.com/)**: For API data fetching (Prayer Times).
+*   **[Firebase](https://firebase.google.com/)**: Backend service (for Leaderboard/Database features).
 
-## Instalasi & Menjalankan
+## Installation & Running
 
-Ikuti langkah ini untuk menjalankan proyek di komputer lokal Anda:
+Follow these steps to run the project on your local machine:
 
-1.  **Clone repositori:**
+1.  **Clone the repository:**
     ```bash
     git clone https://github.com/yayat/belajar-mengaji.git
     cd belajar-mengaji
     ```
 
-2.  **Instal dependensi:**
-    Pastikan Node.js sudah terinstal.
+2.  **Install dependencies:**
+    Make sure Node.js is installed.
     ```bash
     npm install
     ```
 
-3.  **Jalankan mode pengembangan:**
+3.  **Run development mode:**
     ```bash
     npm run dev
     ```
-    Buka `http://localhost:5173` di browser Anda.
+    Open `http://localhost:5173` in your browser.
 
-## Struktur Proyek
+## Project Structure
 
-*   `src/components`: Komponen UI yang dapat digunakan kembali (Dashboard, Sidebar, dll).
-*   `src/pages`: Halaman-halaman utama aplikasi (Quran, Sholat, Quiz).
-*   `src/hooks`: Custom hooks (seperti `usePrayerTimes`).
-*   `src/lib`: Konfigurasi library pihak ketiga (Firebase).
+*   `src/components`: Reusable UI components (Dashboard, Sidebar, etc.).
+*   `src/pages`: Main application pages (Quran, Prayer, Quiz).
+*   `src/hooks`: Custom hooks (e.g., `usePrayerTimes`).
+*   `src/lib`: Third-party library configurations (Firebase).
 
-## Lisensi
+## License
 
 [MIT](LICENSE)
 
 ---
-Dibuat dengan ❤️ untuk pembelajaran Islam.
+Made with ❤️ for Islamic learning.

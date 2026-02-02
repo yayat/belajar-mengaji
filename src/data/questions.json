@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "Berapa jumlah rakaat sholat Isya?",
+    "options": [
+      "2 Rakaat",
+      "3 Rakaat",
+      "4 Rakaat",
+      "5 Rakaat"
+    ],
+    "answer": "4 Rakaat",
+    "category": "Sholat"
+  },
+  {
+    "id": 2,
+    "question": "Apa arti dari Al-Fatihah?",
+    "options": [
+      "Pembukaan",
+      "Sapi Betina",
+      "Keluarga Imran",
+      "Hidangan"
+    ],
+    "answer": "Pembukaan",
+    "category": "Al-Quran"
+  },
+  {
+    "id": 3,
+    "question": "Huruf hijaiyah 'ج' disebut?",
+    "options": [
+      "Ha",
+      "Kho",
+      "Jim",
+      "Dal"
+    ],
+    "answer": "Jim",
+    "category": "Al-Quran"
+  },
+  {
+    "id": 4,
+    "question": "Membasuh muka adalah rukun wudhu yang ke?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "2",
+    "category": "Sholat"
+  },
+  {
+    "id": 5,
+    "question": "Hukum nun mati bertemu 'ba' adalah?",
+    "options": [
+      "Izhar",
+      "Ikhfa",
+      "Iqlab",
+      "Idgham"
+    ],
+    "answer": "Iqlab",
+    "category": "Tajwid"
+  },
+  {
+    "id": 6,
+    "question": "Sholat sunnah yang dilakukan sebelum sholat subuh disebut?",
+    "options": [
+      "Qobliyah Subuh",
+      "Ba'diyah Subuh",
+      "Tahajud",
+      "Witir"
+    ],
+    "answer": "Qobliyah Subuh",
+    "category": "Sholat"
+  },
+  {
+    "id": 7,
+    "question": "Kitab Jurumiyah membahas ilmu?",
+    "options": [
+      "Fiqih",
+      "Tauhid",
+      "Nahwu",
+      "Sorof"
+    ],
+    "answer": "Nahwu",
+    "category": "Kitab"
+  },
+  {
+    "id": 8,
+    "question": "Surat An-Nas artinya?",
+    "options": [
+      "Waktu Subuh",
+      "Manusia",
+      "Gajah",
+      "Semut"
+    ],
+    "answer": "Manusia",
+    "category": "Al-Quran"
+  },
+  {
+    "id": 9,
+    "question": "Malaikat yang bertugas menyampaikan wahyu adalah?",
+    "options": [
+      "Mikail",
+      "Israfil",
+      "Jibril",
+      "Izrail"
+    ],
+    "answer": "Jibril",
+    "category": "Iman"
+  },
+  {
+    "id": 10,
+    "question": "Nabi terakhir adalah?",
+    "options": [
+      "Nabi Isa",
+      "Nabi Musa",
+      "Nabi Ibrahim",
+      "Nabi Muhammad"
+    ],
+    "answer": "Nabi Muhammad",
+    "category": "Sejarah"
+  },
+  {
+    "id": 11,
+    "question": "Puasa wajib dilakukan pada bulan?",
+    "options": [
+      "Syawal",
+      "Ramadhan",
+      "Rajab",
+      "Sya'ban"
+    ],
+    "answer": "Ramadhan",
+    "category": "Fiqih"
+  },
+  {
+    "id": 12,
+    "question": "Rukun Iman ada berapa?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": "6",
+    "category": "Iman"
+  },
+  {
+    "id": 13,
+    "question": "Surah terpanjang dalam Al-Quran adalah?",
+    "options": [
+      "Al-Baqarah",
+      "Ali Imran",
+      "An-Nisa",
+      "Al-Maidah"
+    ],
+    "answer": "Al-Baqarah",
+    "category": "Al-Quran"
+  },
+  {
+    "id": 14,
+    "question": "Siapakah Khalifah pertama?",
+    "options": [
+      "Umar bin Khattab",
+      "Ali bin Abi Thalib",
+      "Abu Bakar As-Siddiq",
+      "Utsman bin Affan"
+    ],
+    "answer": "Abu Bakar As-Siddiq",
+    "category": "Sejarah"
+  },
+  {
+    "id": 15,
+    "question": "Sholat Idul Fitri hukumnya?",
+    "options": [
+      "Wajib",
+      "Sunnah Muakkad",
+      "Fardhu Kifayah",
+      "Mubah"
+    ],
+    "answer": "Sunnah Muakkad",
+    "category": "Fiqih"
+  },
+  {
+    "id": 16,
+    "question": "Doa iftitah dibaca setelah?",
+    "options": [
+      "Takbiratul Ihram",
+      "Rukuk",
+      "Sujud",
+      "Salam"
+    ],
+    "answer": "Takbiratul Ihram",
+    "category": "Sholat"
+  },
+  {
+    "id": 17,
+    "question": "Apa arti 'Iqra'?",
+    "options": [
+      "Tulislah",
+      "Bacalah",
+      "Dengarlah",
+      "Lihatlah"
+    ],
+    "answer": "Bacalah",
+    "category": "Al-Quran"
+  },
+  {
+    "id": 18,
+    "question": "Nabi yang memiliki mukjizat membelah lautan adalah?",
+    "options": [
+      "Nabi Musa",
+      "Nabi Isa",
+      "Nabi Nuh",
+      "Nabi Ibrahim"
+    ],
+    "answer": "Nabi Musa",
+    "category": "Sejarah"
+  },
+  {
+    "id": 19,
+    "question": "Hukum bacaan Alif Lam Syamsiyah dibaca?",
+    "options": [
+      "Jelas",
+      "Dengung",
+      "Samar",
+      "Melebur/Tidak dibaca lamnya"
+    ],
+    "answer": "Melebur/Tidak dibaca lamnya",
+    "category": "Tajwid"
+  },
+  {
+    "id": 20,
+    "question": "Malaikat peniup sangkakala adalah?",
+    "options": [
+      "Jibril",
+      "Mikail",
+      "Israfil",
+      "Izrail"
+    ],
+    "answer": "Israfil",
+    "category": "Iman"
+  },
+  {
+    "id": 21,
+    "question": "Bulan diturunkannya Al-Quran adalah?",
+    "options": [
+      "Rajab",
+      "Ramadhan",
+      "Sya'ban",
+      "Muharram"
+    ],
+    "answer": "Ramadhan",
+    "category": "Sejarah"
+  },
+  {
+    "id": 22,
+    "question": "Apa nama unta Nabi Muhammad SAW?",
+    "options": [
+      "Buraq",
+      "Qaswa",
+      "Duldul",
+      "Lail"
+    ],
+    "answer": "Qaswa",
+    "category": "Sejarah"
+  },
+  {
+    "id": 23,
+    "question": "Surah Al-Ikhlas setara dengan membaca ... Al-Quran.",
+    "options": [
+      "Sepertiga",
+      "Setengah",
+      "Seperempat",
+      "Seluruh"
+    ],
+    "answer": "Sepertiga",
+    "category": "Al-Quran"
+  },
+  {
+    "id": 24,
+    "question": "Sholat yang dikerjakan saat gerhana matahari disebut?",
+    "options": [
+      "Khusuf",
+      "Kusuf",
+      "Istisqa",
+      "Hajat"
+    ],
+    "answer": "Kusuf",
+    "category": "Sholat"
+  },
+  {
+    "id": 25,
+    "question": "Istilah berhenti sejenak saat membaca Al-Quran tanpa mengambil napas disebut?",
+    "options": [
+      "Waqaf",
+      "Saktah",
+      "Wasal",
+      "Mad"
+    ],
+    "answer": "Saktah",
+    "category": "Tajwid"
+  },
+  {
+    "id": 26,
+    "question": "Nama lain dari Surah Al-Fatihah adalah?",
+    "options": [
+      "Ummul Kitab",
+      "Qalbul Quran",
+      "Ar-Rahman",
+      "Al-Mulk"
+    ],
+    "answer": "Ummul Kitab",
+    "category": "Al-Quran"
+  },
+  {
+    "id": 27,
+    "question": "Siapakah istri pertama Nabi Muhammad SAW?",
+    "options": [
+      "Aisyah",
+      "Khadijah",
+      "Fatimah",
+      "Hafsah"
+    ],
+    "answer": "Khadijah",
+    "category": "Sejarah"
+  },
+  {
+    "id": 28,
+    "question": "Zakat yang wajib dikeluarkan setiap jiwa seorang muslim menjelang Idul Fitri disebut?",
+    "options": [
+      "Zakat Mal",
+      "Zakat Fitrah",
+      "Sedekah",
+      "Infaq"
+    ],
+    "answer": "Zakat Fitrah",
+    "category": "Fiqih"
+  },
+  {
+    "id": 29,
+    "question": "Jumlah Asmaul Husna yang wajib diketahui adalah?",
+    "options": [
+      "100",
+      "99",
+      "25",
+      "50"
+    ],
+    "answer": "99",
+    "category": "Tauhid"
+  },
+  {
+    "id": 30,
+    "question": "Nabi yang diberi gelar 'Khalilullah' (Kekasih Allah) adalah?",
+    "options": [
+      "Nabi Muhammad",
+      "Nabi Ibrahim",
+      "Nabi Musa",
+      "Nabi Isa"
+    ],
+    "answer": "Nabi Ibrahim",
+    "category": "Sejarah"
+  },
+  {
+    "id": 31,
+    "question": "Hari raya kurban jatuh pada tanggal?",
+    "options": [
+      "1 Syawal",
+      "10 Dzulhijjah",
+      "1 Muharram",
+      "12 Rabiul Awal"
+    ],
+    "answer": "10 Dzulhijjah",
+    "category": "Fiqih"
+  },
+  {
+    "id": 32,
+    "question": "Sholat jenazah terdiri dari berapa takbir?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "4",
+    "category": "Sholat"
+  },
+  {
+    "id": 33,
+    "question": "Masjid pertama yang dibangun Nabi Muhammad SAW adalah?",
+    "options": [
+      "Masjidil Haram",
+      "Masjid Nabawi",
+      "Masjid Quba",
+      "Masjid Aqsa"
+    ],
+    "answer": "Masjid Quba",
+    "category": "Sejarah"
+  },
+  {
+    "id": 34,
+    "question": "Hukum memotong kuku pada hari Jumat adalah?",
+    "options": [
+      "Wajib",
+      "Sunnah",
+      "Makruh",
+      "Haram"
+    ],
+    "answer": "Sunnah",
+    "category": "Fiqih"
+  },
+  {
+    "id": 35,
+    "question": "Idgham Bighunnah artinya?",
+    "options": [
+      "Memasukkan dengan dengung",
+      "Memasukkan tanpa dengung",
+      "Menjelaskan",
+      "Menyamarkan"
+    ],
+    "answer": "Memasukkan dengan dengung",
+    "category": "Tajwid"
+  },
+  {
+    "id": 36,
+    "question": "Surah yang tidak diawali Basmalah adalah?",
+    "options": [
+      "Al-Anfal",
+      "At-Taubah",
+      "Yunus",
+      "Hud"
+    ],
+    "answer": "At-Taubah",
+    "category": "Al-Quran"
+  },
+  {
+    "id": 37,
+    "question": "Siapakah yang menemani Nabi Muhammad SAW saat hijrah ke Madinah?",
+    "options": [
+      "Ali bin Abi Thalib",
+      "Umar bin Khattab",
+      "Abu Bakar As-Siddiq",
+      "Utsman bin Affan"
+    ],
+    "answer": "Abu Bakar As-Siddiq",
+    "category": "Sejarah"
+  },
+  {
+    "id": 38,
+    "question": "Arti 'Astaghfirullah' adalah?",
+    "options": [
+      "Maha Suci Allah",
+      "Segala Puji bagi Allah",
+      "Aku memohon ampun kepada Allah",
+      "Allah Maha Besar"
+    ],
+    "answer": "Aku memohon ampun kepada Allah",
+    "category": "Doa"
+  },
+  {
+    "id": 39,
+    "question": "Air yang suci dan mensucikan disebut air?",
+    "options": [
+      "Mutanajis",
+      "Mutlaq",
+      "Musta'mal",
+      "Musyammas"
+    ],
+    "answer": "Mutlaq",
+    "category": "Fiqih"
+  },
+  {
+    "id": 40,
+    "question": "Berapa lama Ashabul Kahfi tertidur?",
+    "options": [
+      "300 tahun",
+      "309 tahun",
+      "350 tahun",
+      "100 tahun"
+    ],
+    "answer": "309 tahun",
+    "category": "Sejarah"
+  },
+  {
+    "id": 41,
+    "question": "Hukum membaca Al-Quran dengan tartil adalah?",
+    "options": [
+      "Sunnah",
+      "Wajib",
+      "Mubah",
+      "Makruh"
+    ],
+    "answer": "Wajib",
+    "category": "Al-Quran"
+  },
+  {
+    "id": 42,
+    "question": "Apa itu 'Tayamum'?",
+    "options": [
+      "Wudhu dengan air",
+      "Bersuci dengan debu",
+      "Mandi wajib",
+      "Membersihkan najis"
+    ],
+    "answer": "Bersuci dengan debu",
+    "category": "Fiqih"
+  },
+  {
+    "id": 43,
+    "question": "Berapa jumlah nabi Ulul Azmi?",
+    "options": [
+      "4",
+      "5",
+      "25",
+      "10"
+    ],
+    "answer": "5",
+    "category": "Sejarah"
+  },
+  {
+    "id": 44,
+    "question": "Ayat Kursi terdapat dalam surah?",
+    "options": [
+      "Al-Imran",
+      "Al-Baqarah",
+      "An-Nisa",
+      "Al-Maidah"
+    ],
+    "answer": "Al-Baqarah",
+    "category": "Al-Quran"
+  },
+  {
+    "id": 45,
+    "question": "Kiblat pertama umat Islam adalah?",
+    "options": [
+      "Ka'bah",
+      "Masjidil Haram",
+      "Masjidil Aqsa",
+      "Masjid Nabawi"
+    ],
+    "answer": "Masjidil Aqsa",
+    "category": "Sejarah"
+  },
+  {
+    "id": 46,
+    "question": "Apa arti 'Subhanallah'?",
+    "options": [
+      "Maha Suci Allah",
+      "Segala Puji Bagi Allah",
+      "Allah Maha Besar",
+      "Tiada Tuhan selain Allah"
+    ],
+    "answer": "Maha Suci Allah",
+    "category": "Doa"
+  },
+  {
+    "id": 47,
+    "question": "Peristiwa turunnya Al-Quran disebut?",
+    "options": [
+      "Isra Mi'raj",
+      "Nuzulul Quran",
+      "Maulid Nabi",
+      "Idul Adha"
+    ],
+    "answer": "Nuzulul Quran",
+    "category": "Sejarah"
+  },
+  {
+    "id": 48,
+    "question": "Berapa jumlah ayat dalam surah Al-Fatihah?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": "7",
+    "category": "Al-Quran"
+  },
+  {
+    "id": 49,
+    "question": "Siapakah malaikat penjaga neraka?",
+    "options": [
+      "Ridwan",
+      "Malik",
+      "Munkar",
+      "Nakir"
+    ],
+    "answer": "Malik",
+    "category": "Iman"
+  },
+  {
+    "id": 50,
+    "question": "Puasa Arafah dilakukan pada tanggal?",
+    "options": [
+      "8 Dzulhijjah",
+      "9 Dzulhijjah",
+      "10 Dzulhijjah",
+      "11 Dzulhijjah"
+    ],
+    "answer": "9 Dzulhijjah",
+    "category": "Fiqih"
+  }
+]

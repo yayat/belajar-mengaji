@@ -4,13 +4,13 @@ import { getFirestore } from "firebase/firestore";
 // TODO: Replace the following with your app's Firebase project configuration
 // You can get this from the Firebase Console > Project Settings
 const firebaseConfig = {
-    apiKey: "AIzaSyD0Bu-EMUo9f5Cvb2-SXXHbOhN7PbFm_yw",
-    authDomain: "belajar-mengaji-edcb1.firebaseapp.com",
-    projectId: "belajar-mengaji-edcb1",
-    storageBucket: "belajar-mengaji-edcb1.firebasestorage.app",
-    messagingSenderId: "651221768653",
-    appId: "1:651221768653:web:69a234649506dfdce14c84",
-    measurementId: "G-8ZC580DXPN"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase only if keys are provided (basic check)

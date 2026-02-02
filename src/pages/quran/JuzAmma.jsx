@@ -1,11 +1,44 @@
 import React, { useState, useEffect } from 'react';
-import { BookOpen, Loader2, ChevronDown, ChevronUp } from 'lucide-react';
+import { BookOpen, Loader2, ChevronDown, ChevronUp, Volume2, Pause, Square } from 'lucide-react';
 import axios from 'axios';
+import { playTextToSpeech } from '@/utils/audio';
 
 const JuzAmma = () => {
     const [surahs, setSurahs] = useState([]);
     const [loading, setLoading] = useState(true);
     const [expandedSurah, setExpandedSurah] = useState(null);
+    const [playingVerse, setPlayingVerse] = useState(null);
+
+    const handlePlayVerse = (ayah, surahNum) => {
+        if (playingVerse) return;
+
+        setPlayingVerse({ surah: surahNum, verse: ayah.nomorAyat });
+
+        // Check for API audio (usually key '05' for Misyari) or fallback to '01'
+        const audioUrl = ayah.audio?.['05'] || ayah.audio?.['01'];
+
+        if (audioUrl) {
+            const audio = new Audio(audioUrl);
+            audio.onended = () => setPlayingVerse(null);
+            audio.onerror = () => {
+                playFallback(ayah.teksArab);
+            };
+            audio.play().catch(e => {
+                console.error("Verse audio play error", e);
+                playFallback(ayah.teksArab);
+            });
+        } else {
+            playFallback(ayah.teksArab);
+        }
+    };
+
+    const playFallback = (text) => {
+        playTextToSpeech(
+            text,
+            () => setPlayingVerse(null),
+            () => setPlayingVerse(null)
+        );
+    };
 
     useEffect(() => {
         const fetchJuz30 = async () => {
@@ -83,22 +116,29 @@ const JuzAmma = () => {
                                     )}
 
                                     <div className="space-y-6">
-                                        {surah.ayat.map((ayah) => (
-                                            <div key={ayah.nomorAyat} className="flex flex-col gap-2 border-b border-slate-50 pb-4 last:border-0">
-                                                <div className="flex justify-between items-start gap-4">
-                                                    <div className="w-8 h-8 rounded-full border border-primary-200 text-primary-600 text-xs flex items-center justify-center flex-shrink-0 mt-1">
-                                                        {ayah.nomorAyat}
+                                        {surah.ayat.map((ayah) => {
+                                            const isVersePlaying = playingVerse?.surah === surah.nomor && playingVerse?.verse === ayah.nomorAyat;
+                                            return (
+                                                <div key={ayah.nomorAyat} className="flex flex-col gap-2 border-b border-slate-50 pb-4 last:border-0">
+                                                    <div className="flex justify-between items-start gap-4">
+                                                        <div className="w-8 h-8 rounded-full border border-primary-200 text-primary-600 text-xs flex items-center justify-center flex-shrink-0 mt-1">
+                                                            {ayah.nomorAyat}
+                                                        </div>
+                                                        <p
+                                                            onClick={() => handlePlayVerse(ayah, surah.nomor)}
+                                                            className={`text-2xl font-arabic text-right leading-loose w-full cursor-pointer transition-colors select-none ${isVersePlaying ? 'text-primary-600 font-bold' : 'text-slate-800 hover:text-primary-600'
+                                                                }`}
+                                                        >
+                                                            {ayah.teksArab}
+                                                        </p>
                                                     </div>
-                                                    <p className="text-2xl font-arabic text-right leading-loose text-slate-800 w-full">
-                                                        {ayah.teksArab}
-                                                    </p>
+                                                    <div className="pl-12">
+                                                        <p className="text-primary-700 text-sm mb-1">{ayah.teksLatin}</p>
+                                                        <p className="text-slate-500 text-sm italic">"{ayah.teksIndonesia}"</p>
+                                                    </div>
                                                 </div>
-                                                <div className="pl-12">
-                                                    <p className="text-primary-700 text-sm mb-1">{ayah.teksLatin}</p>
-                                                    <p className="text-slate-500 text-sm italic">"{ayah.teksIndonesia}"</p>
-                                                </div>
-                                            </div>
-                                        ))}
+                                            );
+                                        })}
                                     </div>
                                 </div>
                             )}

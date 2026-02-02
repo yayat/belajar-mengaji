@@ -1,9 +1,22 @@
 import React, { useState } from 'react';
 import { BookOpen, ChevronRight, PlayCircle } from 'lucide-react';
+import { playTextToSpeech } from '@/utils/audio';
 
 const Iqro = () => {
     const [level, setLevel] = useState(1);
     const [page, setPage] = useState(1);
+    const [playingChar, setPlayingChar] = useState(null);
+
+    const handlePlayChar = (text, lineIdx, charIdx) => {
+        if (playingChar) return; // Prevent overlapping
+
+        setPlayingChar({ line: lineIdx, char: charIdx });
+        playTextToSpeech(
+            text,
+            () => setPlayingChar(null),
+            () => setPlayingChar(null)
+        );
+    };
 
     const levels = [1, 2, 3, 4, 5, 6];
 
@@ -665,16 +678,23 @@ const Iqro = () => {
                 <div className="flex-1 flex flex-col items-center justify-center py-12 px-4">
                     {totalPages > 0 ? (
                         <div className="w-full max-w-4xl space-y-8">
-                            {currentPageContent.map((line, idx) => (
-                                <div key={idx} className="flex flex-wrap flex-row-reverse justify-center gap-8 md:gap-16">
-                                    {line.map((char, charIdx) => (
-                                        <div
-                                            key={charIdx}
-                                            className="font-arabic text-5xl md:text-7xl text-slate-800 hover:text-primary-600 transition-colors cursor-pointer leading-relaxed"
-                                        >
-                                            {char}
-                                        </div>
-                                    ))}
+                            {currentPageContent.map((line, lineIdx) => (
+                                <div key={lineIdx} className="flex flex-wrap flex-row-reverse justify-center gap-8 md:gap-16">
+                                    {line.map((char, charIdx) => {
+                                        const isPlaying = playingChar?.line === lineIdx && playingChar?.char === charIdx;
+                                        return (
+                                            <div
+                                                key={charIdx}
+                                                onClick={() => handlePlayChar(char, lineIdx, charIdx)}
+                                                className={`font-arabic text-5xl md:text-7xl transition-all cursor-pointer leading-relaxed select-none ${isPlaying
+                                                    ? 'text-primary-600 scale-110 drop-shadow-md'
+                                                    : 'text-slate-800 hover:text-primary-600 hover:scale-105'
+                                                    }`}
+                                            >
+                                                {char}
+                                            </div>
+                                        );
+                                    })}
                                 </div>
                             ))}
                         </div>

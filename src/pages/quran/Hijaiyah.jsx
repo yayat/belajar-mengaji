@@ -6,15 +6,38 @@ import { playTextToSpeech } from '@/utils/audio';
 const Hijaiyah = () => {
     const [playingIndex, setPlayingIndex] = useState(null);
 
-    const handlePlaySound = (text, idx) => {
+    const handlePlaySound = (item, idx) => {
         if (playingIndex !== null) return; // Prevent overlapping
 
         setPlayingIndex(idx);
-        playTextToSpeech(
-            text,
-            () => setPlayingIndex(null), // onEnd
-            () => setPlayingIndex(null)  // onError
-        );
+
+        if (item.audio) {
+            const audio = new Audio(item.audio);
+            audio.onended = () => setPlayingIndex(null);
+            audio.onerror = () => {
+                console.warn("Audio file failed, falling back to TTS");
+                playTextToSpeech(
+                    item.arabic,
+                    () => setPlayingIndex(null),
+                    () => setPlayingIndex(null)
+                );
+            };
+            audio.play().catch(e => {
+                console.error("Audio play error:", e);
+                // Fallback
+                playTextToSpeech(
+                    item.arabic,
+                    () => setPlayingIndex(null),
+                    () => setPlayingIndex(null)
+                );
+            });
+        } else {
+            playTextToSpeech(
+                item.arabic,
+                () => setPlayingIndex(null),
+                () => setPlayingIndex(null)
+            );
+        }
     };
 
     return (
@@ -31,10 +54,10 @@ const Hijaiyah = () => {
                 {hijaiyahData.map((item, idx) => (
                     <div
                         key={idx}
-                        onClick={() => handlePlaySound(item.arabic, idx)}
+                        onClick={() => handlePlaySound(item, idx)}
                         className={`bg-white p-6 rounded-xl shadow-sm border transition-all cursor-pointer group flex flex-col items-center justify-center gap-3 aspect-square active:scale-95 ${playingIndex === idx
-                                ? 'border-primary-500 ring-2 ring-primary-200 bg-primary-50'
-                                : 'border-slate-100 hover:shadow-md hover:border-primary-200 hover:bg-white'
+                            ? 'border-primary-500 ring-2 ring-primary-200 bg-primary-50'
+                            : 'border-slate-100 hover:shadow-md hover:border-primary-200 hover:bg-white'
                             }`}
                     >
                         <div className={`w-16 h-16 rounded-full flex items-center justify-center transition-colors ${playingIndex === idx ? 'bg-white' : 'bg-primary-50 group-hover:bg-primary-100'

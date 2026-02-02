@@ -78,7 +78,7 @@ const JuzAmma = () => {
                     <BookOpen className="w-8 h-8 text-primary-600" />
                     Juz Amma (Juz 30)
                 </h1>
-                <p className="text-slate-500 mt-2">Hafalan surat-surat pendek (An-Naba s/d An-Nas).</p>
+                <p className="text-slate-500 mt-2">Hafalan surat-surat pendek (An-Naba s/d An-Nas). Klik ayat untuk mendengarkan audio.</p>
             </div>
 
             {loading ? (

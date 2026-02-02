@@ -2,7 +2,7 @@
 
 A comprehensive web application for learning to read the Quran, prayer guides, and Islamic knowledge. Built with modern web technologies to provide an interactive and accessible learning experience.
 
-![Belajar Mengaji App](public/vite.svg) *Replace with actual app screenshot if available*
+![Belajar Mengaji App](dashboard.png)
 
 ## Key Features
 

@@ -2,7 +2,7 @@
 
 Aplikasi web komprehensif untuk belajar membaca Al-Quran, panduan ibadah sholat, dan ilmu agama Islam. Dibangun dengan teknologi web modern untuk memberikan pengalaman belajar yang interaktif dan mudah diakses.
 
-![Belajar Mengaji App](public/vite.svg) *Ganti dengan screenshot aplikasi jika ada*
+![Belajar Mengaji App](dashboard.png)
 
 ## Fitur Utama
 

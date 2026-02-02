@@ -53,7 +53,14 @@ Follow these steps to run the project on your local machine:
     npm install
     ```
 
-3.  **Run development mode:**
+3.  **Configure Environment Variables:**
+    Copy the `.env` example file:
+    ```bash
+    cp env.example .env
+    ```
+    Open the `.env` file and fill in your Firebase configuration values (API Key, Project ID, etc).
+
+4.  **Run development mode:**
     ```bash
     npm run dev
     ```
